@@ -14,27 +14,7 @@ function App() {
         </div>
       </div>
       <div className='dashboard'>
-        <div className='body_dashboard_floor1'>
-          <div className='floor1_box1'>
-            <div className='floor1_box1_top'>
-              1
-            </div>
-            <div className='floor1_box1_down'>
-              2
-            </div>
-          </div>
-          <div className='floor1_box2'>
-            <div className='component_title'>2023年1-12月PCS数分布（单位：件）</div>
-            3
-          </div>
-          <div className='floor1_box3'>
-            <div className='component_title'>2023年1-12月订单数量分布（单位：张）</div>
-            4
-          </div>
-        </div>
-        <div className='body_dashboard_floor2'>
 
-        </div>
       </div>
     </div>
   );
