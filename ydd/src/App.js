@@ -6,7 +6,7 @@ function App() {
       <div className='title_box'>
         <div className="title_dashboard_box">
           <div className='title_left_box'>
-            <div className='leftbox1'>医朵朵数据汇总看板3</div>
+            <div className='leftbox1'>医朵朵数据汇总看板4</div>
             <div className='leftbox2'></div>
             <div className='leftbox3'>Ydd Dashboard</div>
           </div>
