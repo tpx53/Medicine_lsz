@@ -1,4 +1,5 @@
 import './App.css';
+import Formpage from './components/Formpage/Formpage';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         </div>
       </div>
       <div className='dashboard'>
-
+        <Formpage />
       </div>
     </div>
   );
