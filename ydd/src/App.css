@@ -50,6 +50,58 @@
   background-color: #f2f3f5;
 }
 
+.dashboard_top {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  .basic_infor_title {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    .title_name {
+      background-color: #4e72be;
+      width: 10rem;
+      height: 2rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+    }
+  } 
+  .basic_infor {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .basic_infor_box {
+      width: 90%;
+      height: 12rem;
+      background-color: #4e72be;
+      border-radius: 1rem;
+      display: flex;
+      .basic_infor1 {
+        flex: 1;
+
+      }
+      .basic_infor2 {
+        flex: 1;
+        background-color: #fff;
+        margin: 10px;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+
+
+
+
+.dashboard_floor {
+  flex: 2;
+  background-color: yellow;
+}
 
 
 

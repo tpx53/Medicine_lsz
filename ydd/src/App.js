@@ -15,7 +15,22 @@ function App() {
         </div>
       </div>
       <div className='dashboard'>
-        <Formpage />
+        
+        <div className='dashboard_top'>
+          <div className='basic_infor_title'>
+            <div className='title_name'>基本信息</div>
+          </div>
+          <div className='basic_infor'>
+            <div className='basic_infor_box'>
+              <div className='basic_infor1'>1</div>
+              <div className='basic_infor2'>2</div>
+            </div>
+          </div>
+        </div>
+        <div className='dashboard_floor'>
+          <Formpage />
+        </div>
+      
       </div>
     </div>
   );
