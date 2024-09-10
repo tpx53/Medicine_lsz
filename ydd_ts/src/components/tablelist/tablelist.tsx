@@ -5,12 +5,20 @@ import './tablelist.css'
 
 type TabPosition = 'left' | 'right' | 'top' | 'bottom';
 
-const Tablelist : React.FC = () => {
+const Tablelist: React.FC = () => {
   const [mode, setMode] = useState<TabPosition>('top');
 
   const handleModeChange = (e: RadioChangeEvent) => {
     setMode(e.target.value);
   };
+
+  const tabLabels = [
+    '标签 1',
+    '标签 2',
+    '标签 2',
+    //...继续添加其他标签名称
+    '标签 30',
+  ];
 
   return (
     <div className='tablelist'>
@@ -22,15 +30,12 @@ const Tablelist : React.FC = () => {
         defaultActiveKey="0"
         tabPosition={mode}
         className="my-tabs"
-        items={new Array(30).fill(null).map((_, i) => {
-          const id = String(i);
-          return {
-            label: `Tab-${id}`,
-            key: id,
-            disabled: i === 28,
-            children: `Content of tab ${id}`,
-          };
-        })}
+        items={tabLabels.map((label, index) => ({
+          label: label,
+          key: String(index),
+          disabled: false,
+          children: `Content of tab ${label}`,
+        }))}
       />
     </div>
   );
