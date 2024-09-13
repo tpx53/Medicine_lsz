@@ -2,3 +2,9 @@
     flex: 1;
     /* background-color: pink; */
 }
+
+.tablelist_buttonarea {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
