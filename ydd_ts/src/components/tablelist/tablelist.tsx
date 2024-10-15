@@ -10,6 +10,24 @@ type TabPosition = 'left' | 'right' | 'top' | 'bottom';
 const tabLabels = [
     '1.首页内容',
     '2.病例摘要',
+    '3.目录',
+    '4.目录的各章节页',
+    '5.病史信息',
+    '6.主观资料',
+    '7.客观资料',
+    '8.一般性专科评估',
+    '9.重点疾病介绍及专项评估展示',
+    '10.诊断与鉴别诊断',
+    '11.分析思路',
+    '12.目标制定（SMART）',
+    '13.治疗方案',
+    '14.重点治疗技术展示',
+    '15.几个治疗阶段数据对比',
+    '16.结果与随访',
+    '17.跨学科团队',
+    '18.案例总结&反思',
+    '19.参考文献',
+    '20.感谢',
 ];
 
 const Tablelist: React.FC = () => {
@@ -23,12 +41,12 @@ const Tablelist: React.FC = () => {
 
     const handleSubmit = async () => {
         try {
-            const valuesTop = await formTop.validateFields(); // 获取表单的值
-            const valuesSummary = await formSummary.validateFields(); // 校验第二个表单
+            const valuesTop = await formTop.validateFields(); 
+            const valuesSummary = await formSummary.validateFields(); 
             console.log('首页内容提交的值：', valuesTop);
             console.log('病例摘要提交的值：', valuesSummary);
         } catch (errorInfo) {
-            console.log('验证失败:', errorInfo); // 如果验证失败，输出错误信息
+            console.log('验证失败:', errorInfo); 
         }
     };
 
